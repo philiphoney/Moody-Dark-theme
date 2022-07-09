@@ -1,4 +1,4 @@
-[![](https://data.jsdelivr.com/v1/package/gh/philiphoney/Moody-Dark-theme/badge)](https://www.jsdelivr.com/package/gh/philiphoney/Moody-Dark-theme)
+[![](https://data.jsdelivr.com/v1/package/gh/philiphoney/Moody-Dark-theme/badge)](./assets/moody%20dark%20theme%20logo.png)
 
 <img src="https://cdn.discordapp.com/attachments/698641984499220531/995292155348254750/moody_dark_theme_logo.png" />
 
