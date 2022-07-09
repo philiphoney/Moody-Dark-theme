@@ -9,14 +9,14 @@
 setTimeout (screen_loaded, 0); function screen_loaded() {
 
     // Theme
-    if (localStorage["moodytheme"] == 'dark') {moodyThemedark();}
-    else {moodyThemelight();}
+    if (localStorage["moodytheme"] == 'dark') {moodyThemedarkEnabled();}
+    else {moodyThemedarkDisabled();}
 }
 
 // Theme
 
-function moodyButtonThemedark() {localStorage.setItem('moodytheme', 'dark'); moodyThemedark()}
-function moodyButtonThemelight() {localStorage.setItem('moodytheme', 'light'); moodyThemelight()}
+function moodyButtonThemeEnabled() {localStorage.setItem('moodytheme', 'dark'); moodyThemedarkEnabled()}
+function moodyButtonThemeDisabled() {localStorage.setItem('moodytheme', 'light'); moodyThemedarkDisabled()}
 
 function moodyThemeswitch() {
     // first start
@@ -26,9 +26,9 @@ function moodyThemeswitch() {
     // normal start
     if (localStorage["moodytheme"] == 'light') {
         localStorage.setItem('moodytheme', 'dark');
-        moodyThemedark();
+        moodyThemedarkEnabled();
     } else {
         localStorage.setItem('moodytheme', 'light');
-        moodyThemelight();
+        moodyThemedarkDisabled();
     }
 }
