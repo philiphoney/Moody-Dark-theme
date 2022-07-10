@@ -1,34 +1,69 @@
 //
 //    © Philiphoney 2022
 //    Author: Philiphoney https://github.com/philiphoney
-//    Version 1.0
-//    MoodyTheme: 
+//    Version 2.0
+//    MoodyTheme: https://github.com/philiphoney/Moody-Dark-theme
 //
+
+var matches = false;
 
 // This is executed when the web page is started
 setTimeout (screen_loaded, 0); function screen_loaded() {
 
     // Theme
-    if (localStorage["moodytheme"] == 'dark') {moodyThemedarkEnabled();}
-    else {moodyThemedarkDisabled();}
+    if (localStorage["moodytheme"] == 'enabled') {moodyThemedarkEnabled(); enabled()}
+    else {moodyThemedarkDisabled(); disabled();}
+
 }
 
-// Theme
+// moody theme button
+function moodyButtonThemeEnabled() {localStorage.setItem('moodytheme', 'enabled'); moodyThemedarkEnabled(); enabled();}
+function moodyButtonThemeDisabled() {localStorage.setItem('moodytheme', 'disabled'); moodyThemedarkDisabled(); disabled();}
 
-function moodyButtonThemeEnabled() {localStorage.setItem('moodytheme', 'dark'); moodyThemedarkEnabled()}
-function moodyButtonThemeDisabled() {localStorage.setItem('moodytheme', 'light'); moodyThemedarkDisabled()}
-
+// moody theme switch
 function moodyThemeswitch() {
-    // first start
+    // first switch start
     if (localStorage["moodytheme"] != null) {}
-    else{localStorage.setItem('moodytheme', 'light')}
+    else{localStorage.setItem('moodytheme', 'disabled')}
 
     // normal start
-    if (localStorage["moodytheme"] == 'light') {
-        localStorage.setItem('moodytheme', 'dark');
+    if (localStorage["moodytheme"] == 'disabled') {
+        localStorage.setItem('moodytheme', 'enabled');
         moodyThemedarkEnabled();
-    } else {
-        localStorage.setItem('moodytheme', 'light');
+        enabled();
+    } 
+    else {
+        localStorage.setItem('moodytheme', 'disabled');
         moodyThemedarkDisabled();
+        disabled();
     }
+}
+
+function moodyThemedarkEnabled() {}
+function moodyThemedarkDisabled() {}
+
+// Run from the system settings
+window.setInterval('moodymatches()', 0); function moodymatches() {
+if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+
+    if (matches == true) {
+    localStorage.setItem('moodytheme', 'enabled');
+    moodyThemedarkEnabled();
+    enabled();
+    }}
+    else {
+
+    if (matches == true) {
+    localStorage.setItem('moodytheme', 'disabled');
+    moodyThemedarkDisabled();
+    disabled()
+}}}
+
+// Change Body
+function enabled() {
+    document.body.classList.add('darkmode');
+}
+
+function disabled() {
+    document.body.classList.remove('darkmode');
 }
