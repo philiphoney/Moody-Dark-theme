@@ -4,11 +4,16 @@
 
 You can easily create a dark mode and this dark mode is even saved, which means every time you reload the page the dark mode will remain until you turn it off.
 
+###
+
+> ### Make sure this script is above your script. </br>
+> ### Otherwise errors could occur.
+
 ##
 
 The first step is to paste this link in the head `<head>`
 ```html
-<script src="https://cdn.jsdelivr.net/gh/philiphoney/Moody-Dark-theme/moodytheme-v1.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/philiphoney/Moody-Dark-theme/moodytheme-v2.0.js"></script>
 ```
 ##
 ### You can turn Dark Mode on or off with a switch. </br>
@@ -24,6 +29,17 @@ To turn off dark mode: `moodyButtonThemeDisabled()`
     
 <button onclick="moodyButtonThemeDisabled()">dark mode off</button>
 ```
+
+### The dark mod can also be enabled or disabled via the system settings
+To do this, you must set `matches` to `true` in the script.
+```html
+<script>
+    
+matches = true;
+    
+</script>
+```
+
 
 ##
 
@@ -41,5 +57,17 @@ function moodyThemedarkEnabled() {
 
 function moodyThemedarkDisabled() {
    document.getElementById("body").style = "background-color: white;";
+}
+```
+
+#### Css
+
+When dark mode is activated, the `darkmode` class is passed to the body.
+
+An example
+```css
+.darkmode {
+    --color-darkemode: #4b4b4b;
+    background-color: var(--color-darkemode);
 }
 ```
