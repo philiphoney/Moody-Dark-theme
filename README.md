@@ -1,4 +1,4 @@
-<img src="https://cdn.discordapp.com/attachments/698641984499220531/995292155348254750/moody_dark_theme_logo.png" />
+<img src="./assets/img/moody dark theme logo.png" />
 
 <hr>
 
