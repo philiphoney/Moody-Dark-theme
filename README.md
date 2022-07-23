@@ -13,7 +13,7 @@ You can easily create a dark mode and this dark mode is even saved, which means 
 
 The first step is to paste this link in the head `<head>`
 ```html
-<script src="https://cdn.jsdelivr.net/gh/philiphoney/Moody-Dark-theme/version/v2.0/moodytheme.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/philiphoney/Moody-Dark-theme/version/v2.1/moodytheme.js"></script>
 ```
 ##
 ### You can turn Dark Mode on or off with a switch. </br>
