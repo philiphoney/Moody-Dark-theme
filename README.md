@@ -17,7 +17,7 @@ The first step is to paste this link in the head `<head>`
 ```
 ##
 ### You can turn Dark Mode on or off with a switch. </br>
-To do this, you write in the tag: `onclick="moodyThemeswitch()`
+To do this, you write in the tag: `onclick="moodyThemeswitch()"`
 ```html
 <button onclick="moodyThemeswitch()">dark or light</button>
 ```
