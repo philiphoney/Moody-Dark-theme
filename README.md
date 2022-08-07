@@ -6,7 +6,7 @@ You can easily create a dark mode and this dark mode is even saved, which means 
 
 ###
 
-> ### Make sure this script is above your script. </br>
+> ### Make sure this script is under your script.</br>
 > ### Otherwise errors could occur.
 
 ##
