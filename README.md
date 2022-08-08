@@ -7,6 +7,10 @@
 
 You can easily create a dark mode and this dark mode is even saved, which means every time you reload the page the dark mode will remain until you turn it off.
 
+<p align="center">
+<img src="./assets/img/dark-mode-img.png" />
+</p>
+
 ###
 
 > ### Make sure this script is under your script.</br>
