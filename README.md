@@ -1,6 +1,9 @@
-<img src="./assets/img/moody dark theme logo.png" />
 
-<hr>
+<p align="center">
+<img src="./assets/img/moody_logo_new.png" width="20%" />
+</p>
+
+# Moody Dark theme
 
 You can easily create a dark mode and this dark mode is even saved, which means every time you reload the page the dark mode will remain until you turn it off.
 
