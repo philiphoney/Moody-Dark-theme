@@ -1,6 +1,6 @@
 
 <p align="center">
-<img src="./assets/img/moody_logo_new.png" width="20%" />
+<img src="./assets/img/moody%20logo%20new.png" width="20%" />
 </p>
 
 # Moody Dark theme
